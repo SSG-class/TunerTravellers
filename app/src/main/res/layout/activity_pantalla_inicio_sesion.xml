@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://android.com"
+    xmlns:tools="http://android.com"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111116"
+    tools:context="PantallaInicioSesion">
+
+
+    <!-- Botón Iniciar sesion -->
+    <TextView
+        android:id="@+id/tvRegisterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INICIO DE SESION"
+        android:textColor="#00FFCC"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_end_toEndOf="parent"
+        tools2:layout_editor_absoluteX="82dp"
+        tools2:layout_editor_absoluteY="102dp" />
+
+    <FrameLayout
+        android:id="@+id/containerForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_neon_container"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegisterTitle"
+        app:layout_end_toEndOf="parent"
+        tools2:layout_editor_absoluteX="120dp"
+        tools2:layout_editor_absoluteY="207dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Correo Electrónico -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#00FFCC"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#55FFFFFF"
+                android:textSize="16sp" />
+
+            <!-- Teléfono -->
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#00FFCC"
+                android:hint="Teléfono"
+                android:inputType="phone"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#55FFFFFF"
+                android:textSize="16sp" />
+
+            <!-- Contraseña -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#00FFCC"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#55FFFFFF"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmitRegister"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_neon_pink"
+        android:text="Iniciar sesion"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerForm"
+        app:layout_end_toEndOf="parent"
+        tools2:layout_editor_absoluteX="75dp"
+        tools2:layout_editor_absoluteY="468dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGoogleRegister"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_neon_google"
+        android:text="INICIAR CON GOOGLE"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDivider"
+        app:layout_end_toEndOf="parent"
+        tools2:layout_editor_absoluteX="75dp"
+        tools2:layout_editor_absoluteY="582dp" />
+
+    <TextView
+        android:id="@+id/tvDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="— O TAMBIÉN —"
+        android:textColor="#85858A"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubmitRegister"
+        app:layout_end_toEndOf="parent"
+        tools2:layout_editor_absoluteX="161dp"
+        tools2:layout_editor_absoluteY="540dp" />
+    <!-- Botón Inicio de Sesión con Google -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

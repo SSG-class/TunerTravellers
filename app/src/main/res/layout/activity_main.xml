@@ -5,15 +5,89 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#111116"
+    tools:context="MainActivity">
 
+    <!-- Título Principal de la App -->
     <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/TituloPaginaPrincipal"
+        android:textColor="#00FFCC"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/tvSubtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!-- Subtítulo en japonés para el toque JDM de la época -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="ようこそ — BIENVENIDO"
+        android:textColor="#FF007F"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/boton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <!-- Botón Iniciar Sesión (Neón Azul Célebre) -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton1"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:onClick="boton1Click"
+        android:text="INICIAR SESION"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        android:background="@drawable/btn_neon_blue"
+        app:layout_constraintBottom_toTopOf="@+id/boton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitle" />
+
+    <!-- Botón Registrarse (Neón Rosa Magenta) -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton2"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="boton2Click"
+        android:text="REGISTRARSE"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        android:background="@drawable/btn_neon_pink"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/boton1" />
+
+    <!-- Texto interactivo / Botón de Invitado con Subrayado -->
+    <TextView
+        android:id="@+id/btnGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Acceder al foro como invitado"
+        android:textColor="#85858A"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:paintFlags="underline_text"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

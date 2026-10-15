@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#1A00FFCC" /> <!-- Fondo semi-transparente -->
+    <stroke android:width="2dp" android:color="#00FFCC" /> <!-- Borde neón azul -->
+    <corners android:radius="4dp" />
+</shape>
