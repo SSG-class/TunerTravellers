@@ -29,6 +29,11 @@
             android:name=".PantallaInicioSesion"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:theme="@style/Theme.TunerTravellers"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

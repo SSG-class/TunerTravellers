@@ -1,4 +1,24 @@
 <resources>
     <string name="app_name">TunerTravellers</string>
     <string name="TituloPaginaPrincipal">TUNEL TRAVELLERS</string>
+    <string name="SubtituloPaginaPrincipal">ようこそ — BIENVENIDO</string>
+    <string name="BotonInicioSesion">INICIAR SESION</string>
+    <string name="BotonRegistrarse">REGISTRARSE</string>
+    <string name="AccederForo">Acceder al foro como invitado</string>
+    <string name="TituloRegistro">NUEVO USUARIO</string>
+    <string name="BotonCrearCuenta">CREAR CUENTA</string>
+    <string name="TextoTambien">— O TAMBIÉN —</string>
+    <string name="OpcionGoogleRegistro">INICIAR CON GOOGLE</string>
+    <string name="HintNombreUsuario">Nombre de usuario</string>
+    <string name="HintCorreoElectronico">Correo electrónico</string>
+    <string name="HintTelefono">Telefono</string>
+    <string name="HintContraseña">Contraseña</string>
+    <string name="HintRepetirContraseña">Repetir Contraseña</string>
+    <string name="TituloInicioSesion">INICIO DE SESION</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
 </resources>
