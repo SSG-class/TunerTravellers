@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="com.example.tunertravellers.PaginaInicial"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/action_paginaInicio_to_pantallaInicioSesion"
+            app:destination="@id/inicioSesion"/>
+        <action
+            android:id="@+id/action_paginaInicio_to_pantallaRegistro"
+            app:destination="@id/pantallaRegistro"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/inicioSesion"
+        android:name="com.example.tunertravellers.PantallaInicioSesion"
+        android:label="First Fragment"
+        tools:layout="@layout/activity_pantalla_inicio_sesion" >
+
+        <action
+            android:id="@+id/action_inicioSesion_to_recuperar"
+            app:destination="@id/recuperarContrasenaLayout" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/pantallaRegistro"
+        android:name="com.example.tunertravellers.PantallaRegistro"
+        android:label="Second Fragment"
+        tools:layout="@layout/activity_pantalla_registro" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/recuperarContrasenaLayout"
+        android:name="com.example.tunertravellers.RecuperacionContrasena"
+        android:label="Second Fragment"
+        tools:layout="@layout/fragment_recuperacion_contrasena" >
+
+        <action
+
+            android:id="@+id/action_recuperar_to_InicioSesion"
+            app:destination="@id/inicioSesion" />
+    </fragment>
+
+</navigation>

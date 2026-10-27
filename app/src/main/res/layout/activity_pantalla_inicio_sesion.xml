@@ -3,7 +3,7 @@
     xmlns:app="http://android.com"
     xmlns:tools="http://android.com"
     xmlns:tools2="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/inicioSesion"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#111116"

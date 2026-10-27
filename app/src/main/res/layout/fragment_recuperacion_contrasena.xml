@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://android.com"
+    xmlns:tools="http://android.com"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:id="@+id/recuperarContrasenaLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111116"
+    tools:context=".RecuperarContrasenaFragment">
+
+    <TextView
+        android:id="@+id/tvRecoveryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TituloRecuperarContraseña"
+        android:textColor="#00FFCC"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools2:layout_editor_absoluteX="12dp"
+        tools2:layout_editor_absoluteY="82dp" />
+
+    <!-- Divisor -->
+
+    <FrameLayout
+        android:id="@+id/containerRecoveryForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_neon_container"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecoveryInstructions"
+        tools2:layout_editor_absoluteX="120dp"
+        tools2:layout_editor_absoluteY="265dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Correo Electrónico -->
+            <EditText
+                android:id="@+id/etRecoveryEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#00FFCC"
+                android:hint="@string/HintCorreoElectronico"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#55FFFFFF"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvRecoveryInstructions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/TextoCorreoRecuperar"
+        android:textAlignment="center"
+        android:textColor="#85858A"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecoveryTitle"
+        tools2:layout_editor_absoluteX="0dp"
+        tools2:layout_editor_absoluteY="182dp" />
+
+    <!-- Botón Secundario para Volver al Inicio de Sesión -->
+
+    <TextView
+        android:id="@+id/tvRecoveryDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TextoTambien"
+        android:textColor="#85858A"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubmitRecovery"
+        tools2:layout_editor_absoluteX="161dp"
+        tools2:layout_editor_absoluteY="506dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBackToLogin"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_neon_google"
+        android:text="VOLVER AL LOGIN"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecoveryDivider"
+        tools2:layout_editor_absoluteX="75dp"
+        tools2:layout_editor_absoluteY="553dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmitRecovery"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_neon_pink"
+        android:text="ENVIAR CÓDIGO"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerRecoveryForm"
+        tools2:layout_editor_absoluteX="75dp"
+        tools2:layout_editor_absoluteY="421dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
