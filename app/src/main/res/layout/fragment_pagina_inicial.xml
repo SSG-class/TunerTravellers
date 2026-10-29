@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#111116"
-    tools:context="MainActivity">
+    tools:context="PaginaInicial">
 
     <!-- Título Principal de la App -->
     <TextView
@@ -45,7 +45,6 @@
         android:layout_width="260dp"
         android:layout_height="55dp"
         android:layout_marginTop="50dp"
-        android:onClick="boton1Click"
         android:text="@string/BotonInicioSesion"
         android:textColor="#FFFFFF"
         android:textStyle="bold|italic"
@@ -62,7 +61,6 @@
         android:layout_height="55dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="50dp"
-        android:onClick="boton2Click"
         android:text="@string/BotonRegistrarse"
         android:textColor="#FFFFFF"
         android:textStyle="bold|italic"
@@ -84,7 +82,6 @@
         android:textColor="#85858A"
         android:textSize="14sp"
         android:textStyle="italic"
-        android:paintFlags="underline_text"
         android:background="?android:attr/selectableItemBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
