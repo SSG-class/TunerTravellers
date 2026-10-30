@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.NavHostFragment
 import com.example.tunertravellers.databinding.ActivityPantallaRegistroBinding
 
 class PantallaRegistro : Fragment() {
@@ -16,7 +17,6 @@ class PantallaRegistro : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = ActivityPantallaRegistroBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -24,17 +24,25 @@ class PantallaRegistro : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Botón Crear Cuenta
+        // Obtener el NavController ID del nav_host_fragment
+        val navHostFragment = requireActivity().supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        // Botón: Crear Cuenta
         binding.btnSubmitRegister.setOnClickListener {
-            // val username = binding.etUsername.text.toString()
-            // val email = binding.etEmail.text.toString()
-            // val password = binding.etPassword.text.toString()
-            // val repeatPassword = binding.etRepeatPassword.text.toString()
+            val username = binding.etUsername.text.toString()
+            val email = binding.etEmail.text.toString()
+            val phone = binding.etPhone.text.toString()
+            val password = binding.etPassword.text.toString()
+            val repeatPassword = binding.etRepeatPassword.text.toString()
+
+            // Logica futura
         }
 
-        // Botón Registro con Google
+        // Botón: Registro con Google
         binding.btnGoogleRegister.setOnClickListener {
-            //futuro de autenticación alternativa con Google
+            // Logica futura para la autenticación de Google
         }
     }
 

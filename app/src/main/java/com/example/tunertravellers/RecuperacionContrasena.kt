@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import com.example.tunertravellers.databinding.FragmentRecuperacionContrasenaBinding
 
 class RecuperacionContrasena : Fragment() {
@@ -17,7 +17,6 @@ class RecuperacionContrasena : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = FragmentRecuperacionContrasenaBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -25,15 +24,21 @@ class RecuperacionContrasena : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Botón Enviar Código
+        // Obtener el NavController ID del nav_host_fragment
+        val navHostFragment = requireActivity().supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        // Botón: Enviar Código
         binding.btnSubmitRecovery.setOnClickListener {
-            // futuro del correo electrónico
-            // val recoveryEmail = binding.etRecoveryEmail.text.toString()
+            val email = binding.etRecoveryEmail.text.toString()
+
+            // Lgica futura
         }
 
-        // Botón Volver al Login
+        // Botón: Volver al Login
         binding.btnBackToLogin.setOnClickListener {
-            findNavController().navigate(R.id.action_recuperar_to_InicioSesion)
+            navController.navigate(R.id.action_recuperar_to_InicioSesion)
         }
     }
 

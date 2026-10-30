@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import com.example.tunertravellers.databinding.ActivityPantallaInicioSesionBinding
 
 class PantallaInicioSesion : Fragment() {
@@ -24,19 +24,27 @@ class PantallaInicioSesion : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Botón Iniciar Sesión
+        // Obtener el NavController
+        val navHostFragment = requireActivity().supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        // Botón Enviar Registro / Iniciar Sesión
         binding.btnSubmitRegister.setOnClickListener {
-            //futuro comprobar correo y contraseña
+            val email = binding.etEmail.text.toString()
+            val password = binding.etPassword.text.toString()
+
+            // FUtura logica
         }
 
-        // Botón Iniciar con Google
+        // Botón: Inicio de Sesión con Google
         binding.btnGoogleRegister.setOnClickListener {
-            // Futuro conectar google
+            // LOgica futura para google
         }
 
-        // Navegar a Recuperar Contraseña
-        binding.tvRegisterTitle.setOnClickListener {
-            findNavController().navigate(R.id.action_inicioSesion_to_recuperar)
+        // Botón: ¿Se te ha olvidado la contraseña?
+        binding.btnForgotPassword.setOnClickListener {
+            navController.navigate(R.id.action_inicioSesion_to_recuperar)
         }
     }
 

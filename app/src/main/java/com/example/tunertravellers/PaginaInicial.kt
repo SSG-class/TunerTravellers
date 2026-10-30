@@ -24,23 +24,23 @@ class PaginaInicial : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Botón 1: Iniciar Sesión (Con la forma de tu compañero)
+        // Botón 1: Iniciar Sesión
         binding.boton1.setOnClickListener {
             val navHostFragment = requireActivity().supportFragmentManager
                 .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
             val navController = navHostFragment.navController
 
-            // Usamos tu ID de acción del nav_graph.xml
+            // ID de acción del nav_graph.xml
             navController.navigate(R.id.action_paginaInicio_to_pantallaInicioSesion)
         }
 
-        // Botón 2: Registrarse (Con la forma de tu compañero)
+        // Botón 2: Registrarse
         binding.boton2.setOnClickListener {
             val navHostFragment = requireActivity().supportFragmentManager
                 .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
             val navController = navHostFragment.navController
 
-            // Usamos tu ID de acción del nav_graph.xml
+            // Usamos ID de acción del nav_graph.xml
             navController.navigate(R.id.action_paginaInicio_to_pantallaRegistro)
         }
     }
