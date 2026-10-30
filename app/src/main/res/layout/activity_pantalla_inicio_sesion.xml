@@ -122,7 +122,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:background="@android:color/transparent"
-            android:text="¿Se te ha olvidado la contraseña?"
+            android:text="@string/TextoRecuperacionContraseña"
             android:textColor="#00FFCC"
             android:textSize="14sp"
             android:textStyle="bold"
