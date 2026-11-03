@@ -18,6 +18,9 @@
     <string name="TituloRecuperarContraseña">RECUPERAR CONTRASEÑA</string>
     <string name="TextoCorreoRecuperar">Introduce tu correo electrónico registrado y te enviaremos un código para restablecer tu contraseña.</string>
     <string name="TextoRecuperacionContraseña">¿Se te ha olvidado la contraseña?</string>
+    <string name="TextoEnviarCodigo">ENVIAR CODIGO</string>
+    <string name="TextoVolverAlLogin">VOLVER AL LOGIN</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

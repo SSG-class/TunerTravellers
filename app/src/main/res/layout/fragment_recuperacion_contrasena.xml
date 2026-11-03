@@ -75,7 +75,7 @@
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:background="@drawable/btn_neon_pink"
-            android:text="ENVIAR CÓDIGO"
+            android:text="@string/TextoEnviarCodigo"
             android:textColor="#FFFFFF"
             android:textStyle="bold|italic" />
 
@@ -98,7 +98,7 @@
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:background="@drawable/btn_neon_google"
-            android:text="VOLVER AL LOGIN"
+            android:text="@string/TextoVolverAlLogin"
             android:textColor="#FFFFFF"
             android:textStyle="bold|italic" />
 
