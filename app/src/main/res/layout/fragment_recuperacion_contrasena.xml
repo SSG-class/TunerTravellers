@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://android.com"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/recuperarContrasenaLayout"
     android:layout_width="match_parent"
@@ -54,17 +55,29 @@
                 android:orientation="vertical">
 
                 <!-- Correo Electrónico -->
-                <EditText
-                    android:id="@+id/etRecoveryEmail"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilEmail"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:backgroundTint="#00FFCC"
                     android:hint="@string/HintCorreoElectronico"
-                    android:inputType="textEmailAddress"
-                    android:textColor="#FFFFFF"
                     android:textColorHint="#55FFFFFF"
-                    android:textSize="16sp" />
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="#00FFCC"
+                    app:hintTextColor="#00FFCC">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etRecoveryEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
         </FrameLayout>

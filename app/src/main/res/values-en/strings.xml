@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TunerTravellers</string>
+    <string name="TituloPaginaPrincipal">TUNER TRAVELLERS</string>
+    <string name="SubtituloPaginaPrincipal">ようこそ — WELCOME</string>
+    <string name="BotonInicioSesion">LOG IN</string>
+    <string name="BotonRegistrarse">SIGN UP</string>
+    <string name="AccederForo">Access the forum as a guest</string>
+    <string name="TituloRegistro">NEW USER</string>
+    <string name="BotonCrearCuenta">CREATE ACCOUNT</string>
+    <string name="TextoTambien">— OR —</string>
+    <string name="OpcionGoogleRegistro">SIGN IN WITH GOOGLE</string>
+    <string name="HintNombreUsuario">Username</string>
+    <string name="HintCorreoElectronico">Email address</string>
+    <string name="HintTelefono">Phone number</string>
+    <string name="HintContraseña">Password</string>
+    <string name="HintRepetirContraseña">Repeat Password</string>
+    <string name="TituloInicioSesion">LOG IN</string>
+    <string name="TituloRecuperarContraseña">RECOVER PASSWORD</string>
+    <string name="TextoCorreoRecuperar">Enter your registered email address and we will send you a code to reset your password.</string>
+    <string name="TextoRecuperacionContraseña">Forgot your password?</string>
+    <string name="TextoEnviarCodigo">SEND CODE</string>
+    <string name="TextoVolverAlLogin">BACK TO LOGIN</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

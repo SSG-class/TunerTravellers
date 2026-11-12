@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://android.com"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/inicioSesion"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#111116"
     android:fillViewport="true"
-    tools:context="PantallaInicioSesion">
+    tools:context=".PantallaInicioSesion">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,43 +44,82 @@
                 android:orientation="vertical">
 
                 <!-- Correo Electrónico -->
-                <EditText
-                    android:id="@+id/etEmail"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilEmail"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:backgroundTint="#00FFCC"
                     android:hint="@string/HintCorreoElectronico"
-                    android:inputType="textEmailAddress"
-                    android:textColor="#FFFFFF"
                     android:textColorHint="#55FFFFFF"
-                    android:textSize="16sp" />
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="#00FFCC"
+                    app:hintTextColor="#00FFCC">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Teléfono -->
-                <EditText
-                    android:id="@+id/etPhone"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPhone"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="#00FFCC"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     android:hint="@string/HintTelefono"
-                    android:inputType="phone"
-                    android:textColor="#FFFFFF"
                     android:textColorHint="#55FFFFFF"
-                    android:textSize="16sp" />
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="#00FFCC"
+                    app:hintTextColor="#00FFCC">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="phone"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Contraseña -->
-                <EditText
-                    android:id="@+id/etPassword"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPassword"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="#00FFCC"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     android:hint="@string/HintContraseña"
-                    android:inputType="textPassword"
-                    android:textColor="#FFFFFF"
                     android:textColorHint="#55FFFFFF"
-                    android:textSize="16sp" />
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="#00FFCC"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="#00FFCC"
+                    app:hintTextColor="#00FFCC">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPassword"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
 
             </LinearLayout>
         </FrameLayout>
@@ -116,6 +156,7 @@
             android:text="@string/OpcionGoogleRegistro"
             android:textColor="#FFFFFF"
             android:textStyle="bold|italic" />
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnForgotPassword"
             android:layout_width="260dp"
@@ -127,7 +168,6 @@
             android:textSize="14sp"
             android:textStyle="bold"
             android:textAllCaps="false" />
-
 
     </LinearLayout>
 </ScrollView>

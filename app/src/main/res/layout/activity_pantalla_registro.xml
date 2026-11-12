@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://android.com"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/pantallaRegistro"
     android:layout_width="match_parent"
@@ -28,6 +29,7 @@
             android:gravity="center" />
 
         <!-- Formulario contenedor -->
+        <!-- Formulario contenedor -->
         <FrameLayout
             android:id="@+id/containerForm"
             android:layout_width="match_parent"
@@ -43,71 +45,136 @@
                 android:orientation="vertical">
 
                 <!-- Nombre de Usuario -->
-                <EditText
-                    android:id="@+id/etUsername"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilUsername"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:backgroundTint="#00FFCC"
+                    android:layout_height="wrap_content"
                     android:hint="@string/HintNombreUsuario"
-                    android:inputType="textPersonName"
-                    android:textColor="#FFFFFF"
                     android:textColorHint="#55FFFFFF"
-                    android:textSize="16sp" />
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="#00FFCC"
+                    app:hintTextColor="#00FFCC">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPersonName"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Correo Electrónico -->
-                <EditText
-                    android:id="@+id/etEmail"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilEmail"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="#00FFCC"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     android:hint="@string/HintCorreoElectronico"
-                    android:inputType="textEmailAddress"
-                    android:textColor="#FFFFFF"
                     android:textColorHint="#55FFFFFF"
-                    android:textSize="16sp" />
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="#00FFCC"
+                    app:hintTextColor="#00FFCC">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Teléfono -->
-                <EditText
-                    android:id="@+id/etPhone"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPhone"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="#00FFCC"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     android:hint="@string/HintTelefono"
-                    android:inputType="phone"
-                    android:textColor="#FFFFFF"
                     android:textColorHint="#55FFFFFF"
-                    android:textSize="16sp" />
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="#00FFCC"
+                    app:hintTextColor="#00FFCC">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="phone"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Contraseña -->
-                <EditText
-                    android:id="@+id/etPassword"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPassword"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="#00FFCC"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     android:hint="@string/HintContraseña"
-                    android:inputType="textPassword"
-                    android:textColor="#FFFFFF"
                     android:textColorHint="#55FFFFFF"
-                    android:textSize="16sp" />
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="#00FFCC"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="#00FFCC"
+                    app:hintTextColor="#00FFCC">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPassword"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Repetir Contraseña -->
-                <EditText
-                    android:id="@+id/etRepeatPassword"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilRepeatPassword"
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="8dp"
-                    android:backgroundTint="#00FFCC"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
                     android:hint="@string/HintRepetirContraseña"
-                    android:inputType="textPassword"
-                    android:textColor="#FFFFFF"
                     android:textColorHint="#55FFFFFF"
-                    android:textSize="16sp" />
+                    app:boxBackgroundColor="@android:color/transparent"
+                    app:boxStrokeColor="#00FFCC"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="#00FFCC"
+                    app:hintTextColor="#00FFCC">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etRepeatPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPassword"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
         </FrameLayout>
+
 
         <!-- Botón Crear Cuenta -->
         <androidx.appcompat.widget.AppCompatButton
