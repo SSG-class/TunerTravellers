@@ -20,6 +20,14 @@
     <string name="TextoRecuperacionContraseña">Forgot your password?</string>
     <string name="TextoEnviarCodigo">SEND CODE</string>
     <string name="TextoVolverAlLogin">BACK TO LOGIN</string>
+    <string name="ErrorCorreoVacio">Enter your email address</string>
+    <string name="ErrorCorreoInvalido">Enter a valid email address</string>
+    <string name="ErrorTelefonoVacio">Enter your phone number</string>
+    <string name="ErrorContraseniaVacia">Enter your password</string>
+    <string name="ErrorContraseniaCorta">Password must be at least 9 characters long</string>
+    <string name="ErrorUsuarioVacio">Enter a username</string>
+    <string name="ErrorRepetirContrasenia">Repeat your password</string>
+    <string name="ErrorContraseniaNoCoincide">Passwords do not match</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

@@ -20,6 +20,14 @@
     <string name="TextoRecuperacionContraseña">¿Se te ha olvidado la contraseña?</string>
     <string name="TextoEnviarCodigo">ENVIAR CODIGO</string>
     <string name="TextoVolverAlLogin">VOLVER AL LOGIN</string>
+    <string name="ErrorCorreoVacio">Introduce tu correo electrónico</string>
+    <string name="ErrorCorreoInvalido">Introduce un correo electrónico válido</string>
+    <string name="ErrorTelefonoVacio">Introduce tu número de teléfono</string>
+    <string name="ErrorContraseniaVacia">Introduce tu contraseña</string>
+    <string name="ErrorContraseniaCorta">La contraseña debe tener al menos 9 caracteres</string>
+    <string name="ErrorUsuarioVacio">Introduce un nombre de usuario</string>
+    <string name="ErrorRepetirContrasenia">Repite tu contraseña</string>
+    <string name="ErrorContraseniaNoCoincide">Las contraseñas no coinciden</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

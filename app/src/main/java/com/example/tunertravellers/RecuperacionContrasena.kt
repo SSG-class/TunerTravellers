@@ -1,3 +1,4 @@
+
 package com.example.tunertravellers
 
 import android.os.Bundle
@@ -7,6 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.NavHostFragment
 import com.example.tunertravellers.databinding.FragmentRecuperacionContrasenaBinding
+
+// Importaciones necesarias para validar el correo y detectar cambios
+import android.util.Patterns
+import androidx.core.widget.doOnTextChanged
 
 class RecuperacionContrasena : Fragment() {
 
@@ -33,7 +38,21 @@ class RecuperacionContrasena : Fragment() {
         binding.btnSubmitRecovery.setOnClickListener {
             val email = binding.etRecoveryEmail.text.toString()
 
-            // Lgica futura
+            // Validación del correo electrónico
+            if (email.isBlank()) {
+                binding.tilEmail.error = getString(R.string.ErrorCorreoVacio)
+            } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                binding.tilEmail.error = getString(R.string.ErrorCorreoInvalido)
+            } else {
+                binding.tilEmail.error = null
+
+                // Lgica futura
+            }
+        }
+
+        // Eliminar el error al modificar el campo de correo
+        binding.etRecoveryEmail.doOnTextChanged { _, _, _, _ ->
+            binding.tilEmail.error = null
         }
 
         // Botón: Volver al Login
