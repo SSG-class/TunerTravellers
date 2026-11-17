@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/main"
-        android:name="com.example.tunertravellers.PaginaInicial"
+        android:name="fragments.PaginaInicial"
         android:label="fragment_pagina_inicial"
         tools:layout="@layout/fragment_pagina_inicial">
 
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/inicioSesion"
-        android:name="com.example.tunertravellers.PantallaInicioSesion"
+        android:name="fragments.PantallaInicioSesion"
         android:label="First Fragment"
         tools:layout="@layout/activity_pantalla_inicio_sesion" >
 
@@ -35,7 +35,7 @@
 
     <fragment
         android:id="@+id/pantallaRegistro"
-        android:name="com.example.tunertravellers.PantallaRegistro"
+        android:name="fragments.PantallaRegistro"
         android:label="Second Fragment"
         tools:layout="@layout/activity_pantalla_registro" >
 
@@ -43,7 +43,7 @@
 
     <fragment
         android:id="@+id/recuperarContrasenaLayout"
-        android:name="com.example.tunertravellers.RecuperacionContrasena"
+        android:name="fragments.RecuperacionContrasena"
         android:label="Second Fragment"
         tools:layout="@layout/fragment_recuperacion_contrasena" >
 

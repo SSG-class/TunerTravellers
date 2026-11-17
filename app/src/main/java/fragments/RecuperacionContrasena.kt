@@ -1,5 +1,4 @@
-
-package com.example.tunertravellers
+package fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,6 +11,7 @@ import com.example.tunertravellers.databinding.FragmentRecuperacionContrasenaBin
 // Importaciones necesarias para validar el correo y detectar cambios
 import android.util.Patterns
 import androidx.core.widget.doOnTextChanged
+import com.example.tunertravellers.R
 
 class RecuperacionContrasena : Fragment() {
 
