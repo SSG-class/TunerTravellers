@@ -22,11 +22,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PantallaRegistro"
+            android:name="fragments.PantallaRegistro"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".PantallaInicioSesion"
+            android:name="fragments.PantallaInicioSesion"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity

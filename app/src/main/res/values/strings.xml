@@ -28,6 +28,9 @@
     <string name="ErrorUsuarioVacio">Introduce un nombre de usuario</string>
     <string name="ErrorRepetirContrasenia">Repite tu contraseña</string>
     <string name="ErrorContraseniaNoCoincide">Las contraseñas no coinciden</string>
+    <string name="ErrorCredencialesIncorrectas">Las creedenciales son incorrectas</string>
+    <string name="ErrorUsuarioYaExiste">El usuario ya existe</string>
+    <string name="ErrorCorreoNoRegistrado">No existe ninguna cuenta con ese correo</string>
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

@@ -28,6 +28,10 @@
     <string name="ErrorUsuarioVacio">Enter a username</string>
     <string name="ErrorRepetirContrasenia">Repeat your password</string>
     <string name="ErrorContraseniaNoCoincide">Passwords do not match</string>
+    <string name="ErrorCredencialesIncorrectas">The creedentials are wrong</string>
+    <string name="ErrorUsuarioYaExiste">User already exists</string>
+    <string name="ErrorCorreoNoRegistrado">No account exists with that mail</string>
+
 
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
