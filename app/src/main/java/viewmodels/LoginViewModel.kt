@@ -62,7 +62,7 @@ class LoginViewModel : ViewModel() {
         if (!current.isSubmitEnabled) return
 
         viewModelScope.launch {
-            val isSuccess = simulateApiCall(current.email, current.password)
+            val isSuccess = simulateApiCall(current.email, current.phone, current.password)
 
             if (isSuccess) {
                 _uiEvent.send(LoginUiEvent.NavigateToHome)
@@ -82,10 +82,11 @@ class LoginViewModel : ViewModel() {
         }
     }
 
-    // Simulación de llamada al servidor (sustitúyela por tu lógica real)
-    private suspend fun simulateApiCall(email: String, password: String): Boolean {
+    // Simulación
+    // de llamada al servidor (sustitúyela por tu lógica real)
+    private suspend fun simulateApiCall(email: String, phone: String, password: String): Boolean {
         delay(1500)
-        return email == "admin@test.com" && password == "123456789"
+        return email == "admin@test.com" && phone == "111222333" && password == "123456789"
     }
 
     // Reglas de validación
